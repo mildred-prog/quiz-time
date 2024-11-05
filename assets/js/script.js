@@ -1,3 +1,14 @@
+// Variables to keep track of quiz progress and scores
+let currentQuestionIndex = 0;
+let score = 0;
+
+// Variables to keep track of quiz state
+const startQuizButton = document.getElementById("startQuiz");
+const viewRecentScoresButton = document.getElementById("viewRecentScores");
+const openSettingsButton = document.getElementById("openSettings");
+const usernameInput = document.getElementById("username");
+
+// Array containing quiz data (questions, choices, and answers)
 const questions = [
     {
         question: "Who wrote the novel 'Pride & Pejudice'?",
@@ -53,4 +64,7 @@ const questions = [
             { text: "Moses", correct: false }
         ]
     },
+
+    
 ];
+
