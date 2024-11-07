@@ -1,78 +1,61 @@
-*{
-    margin: 0;
+* {
     padding: 0;
-    font-family: "Raleway", sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: #050505;
-    display: grid;
-    justify-content: center;
-    place-items: center;
+    font-weight: 400;
+    font-family: "Raleway" sans-serif;
+    color: #050505;
+    display: flex;
     height: 100vh;
+    flex-direction: column;
+    /* position: fixed; */
 }
 
-.wrapper {
-    height: 375px;
-    width: 100%;
+#index-body {
+    background-position: center;
+    background-color: #050505;
+
 }
 
-.container {
+.general-header {
     text-align: center;
-    background: #ffffff;
-    padding: 50px;
-    margin-inline: 5%;
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.website-hero-name:link,
+.website-hero-name:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.website-hero-name:hover,
+.website-hero-name:active {
+  color: #ddd;
+}
+
+#arts {
+    font-size: 3.5rem;
+}
+
+#literature {
+    font-size: 3.5rem;
+}
+
+/*Main Section*/
+.main-container {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.heading {
-    margin-bottom: 1.5rem;
-    color: #050505;
+    justify-content: flex-start;
+    width: 100%;
 }
   
-.input-group {
-    margin-bottom: 1.5rem;
-    color: #fff;
+#welcome-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
 }
   
-.input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-  
-.input-group input {
-    width: 50%;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #050505;
-    font-size: 1rem;
-}
-  
-.button-group button {
-    width: 80%;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    border:  1px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #000000;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-  
-.button-group button:hover {
-    background-color: #445361;
-    opacity: 0.9;
-}
-
-.content {
-    display: none;
-}
