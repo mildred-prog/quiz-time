@@ -12,58 +12,61 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="wrapper">
+<body id="index-body">
+       <!--Header Section-->
+       <header class="general-header">
+        <h1>
+          <!--Title of website-->
+          <a
+            href="index.html"
+            class="website-hero-name"
+            aria-label="Directs you back to the home page"
+          >
+            <span id="A.L-title">Arts &</span><span id="letter-l">Literature</span>
+          </a>
+        </h1>
+        <!--Link taking you back to original home page-->
+      </header>
+      
+          <!--Main Section-->
+    <main class="main-container">
+      <span role="img" aria-label="dark themed book" ></span>
+      <!--Home Screen Container -->
+      <section id="welcome-container">
+        <!--Start btn user clicks on to start the quiz-->
+        <button id="play-btn">Click to Play</button>
+      </section>
+      <!-- Displays the game round, question, answers, next btn -->
+      <section id="game-container">
+        <div id="round-container">
+          <h2>Round<span id="round-number"></span></h2>
+        </div>
 
-      <div class="container">
-        <h1 class="heading">Art & literature Quiz</h1>
+        <div class="question-container">
+          <!--Displays question-->
+          <p id="question"></p>
+        </div>
+        <!-- 4 Boxes With Answers -->
+        <div id="answers-main-container">
+          <!--Answer 1-->
+          <button class="answers-sub-container"></button>
+          <!--Answer 2-->
+          <button class="answers-sub-container"></button>
+          <!--Answer 3-->
+          <button class="answers-sub-container"></button>
+          <!--Answer 4-->
+          <button class="answers-sub-container"></button>
+        </div>
+        <!--Next question btn for user to click on once chosen an answer on the current round-->
+        <button id="next-round-btn" disabled>Next Question</button>
+      </section>
 
-       <!-- Name Input Field -->
-        <div class="input-group">
-          <label for="username">Enter your name to take the test!</label>
-          <input type="text" id="username" placeholder="" required>
-        </div>
-       
-        <!-- Button Section -->
-        <div class="button-group">
-          <button id="startQuiz" class="btn">Start Quiz</button>
-          <button id="viewRecentScores" class="btn">Recent Scores</button>
-          <button id="openSettings" class="btn">Settings</button>
-        </div>
-      </div>
-  </div>
-  <section>
-      <div class="content">
-       <h1 id="question">Which figure appears in the da Vinci picture 'Salvator Mundi'?</h1>
-       <div class="answers">
-         <div class="answer">
-          <input name="answer" type="radio" id="answer1" value="true">
-          <label for="answer1">"Jesus"</label>
-        </div>
-        <div class="answer">
-          <input name="answer" type="radio" id="answer2" value="false">
-          <label for="answer2">"Mary"</label>
-        </div>
-        <div class="answer">
-          <input name="answer" type="radio" id="answer3" value="false">
-          <label for="answer3">"Holyspirit"</label>
-        </div>
-        <div class="answer">
-          <input name="answer" type="radio" id="answer4" value="false">
-          <label for="answer4">"Moses"</label>
-        </div>
-        <button class="submit">Submit</button>
-      </div>
-
-      <div class="result">
-        <h1>Congratulations for getting this far!</h1>
-        <h3 class="correct">Correct Answers</h3>
-        <h3 class="wrong">Wrong Answers</h3>
-        <h2 class="score">Score: -30</h2>
-        <button class="play">Play again</button>
-      </div>
-    </div>
-  </section>
+      <section id="results-container">
+        <p id="score-text"><span id="correct-answers"></span></p>
+        <h3 id="encouragement-title"></h3>
+        <button id="restart-quiz">Restart Quiz</button>
+      </section>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
