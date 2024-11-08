@@ -20,6 +20,10 @@ body {
 
 }
 
+#game-container {
+    display: none !important;
+}
+ 
 .general-header {
     text-align: center;
     margin-top: 70px;
@@ -30,6 +34,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .website-hero-name:hover,
 .website-hero-name:active {
   color: #ddd;
@@ -59,3 +64,205 @@ body {
     margin-top: 8rem;
 }
   
+#play-btn {
+    font-size: 6rem;
+    font-weight: 600;
+    padding: 0.3em 0.4em;
+    margin: 0em 1em;
+    border-radius: 3rem;
+    border: 0.5rem solid #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #fff;
+    background-color: transparent;
+}
+
+#play-btn:hover {
+    color: #fff;
+    border: inset 0rem;
+    cursor: pointer;
+    background-color: #8f8484;
+}
+
+#game-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#round-container {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 0.3em 0.5em;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 0.3em;
+}
+
+#round-number {
+    color: #fff;
+    padding: 0em 0.4em 0em 0.3em;
+    border-radius: 0.2em 0.3em 0.3em 0.2em;
+    font-weight: 700;
+    background-color: #e63010;
+    font-size: 1.5rem;
+}
+
+#question {
+    display: block;
+    margin: 0em 0.5em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+  
+#answers-main-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 2em 1em 1em 1em;
+    height: auto;
+    width: 100%;
+    max-width: 3500px;
+}
+  
+.answers-sub-container {
+    align-self: center;
+    padding: 0.5em 1em;
+    border-radius: 4rem;
+    border: 0.2em solid #000;
+    transition: all 0.3s;
+    font-size: 2.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 70%;
+}
+
+#next-round-btn {
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 0em 1em;
+    height: 4rem;
+    transition: all 0.3s;
+}
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin: 6em 4em 10em 4em;
+}
+
+#score-text {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+#encouragement-title {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+
+#restart-quiz {
+    margin: 0.5em 0em;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border: 0.5rem solid #fff;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 0em 1em;
+    height: 8rem;
+    transition: all 0.3s;
+  }
+  
+#restart-quiz:hover {
+    cursor: pointer;
+    border: 0rem;
+    background-color: #782420;
+}
+/* remember to style other container make screen size responsive first */
+
+/*Media Queries*/
+@media screen and (max-width: 3840px) {
+    #index-body {
+      background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #play-btn,
+    #restart-quiz {
+      border: 0rem;
+      background-color: #782420;
+    }
+  }
+  
+@media screen and (max-width: 650px) {
+    #welcome-container {
+      margin-top: 8rem;
+    }
+  
+    #play-btn {
+      font-size: 3rem;
+      border-radius: 2.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  
+    #round-number {
+      font-size: 1rem;
+    }
+  
+    #question {
+      font-size: 1.3rem;
+    }
+  
+    #answers-main-container {
+      row-gap: 0.5rem;
+      margin: 1em 0em 0.5em 0em;
+    }
+  
+    .answers-sub-container {
+      font-size: 1.5rem;
+    }
+  
+    #next-round-btn {
+      font-size: 1rem;
+      height: 2.5rem;
+    }
+  
+    #encouragement-title {
+      font-size: 1.5rem;
+    }
+  
+    #score-text {
+      font-size: 2rem;
+    }
+  
+    #restart-quiz {
+      font-size: 2.5rem;
+      height: 5rem;
+    }
+  }
