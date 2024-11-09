@@ -20,8 +20,13 @@ body {
 
 }
 
-#game-container {
-    display: none !important;
+#game-container,
+#results-container {
+  display: none;
+}
+
+.hide {
+  display: none;
 }
  
 .general-header {
@@ -137,7 +142,7 @@ h2 {
     max-width: 3500px;
 }
   
-.answers-sub-container {
+.answers-container {
     align-self: center;
     padding: 0.5em 1em;
     border-radius: 4rem;
@@ -204,20 +209,7 @@ h2 {
 /* remember to style other container make screen size responsive first */
 
 /*Media Queries*/
-@media screen and (max-width: 3840px) {
-    #index-body {
-      background-size: cover;
-    }
-}
 
-@media screen and (max-width: 1024px) {
-    #play-btn,
-    #restart-quiz {
-      border: 0rem;
-      background-color: #782420;
-    }
-  }
-  
 @media screen and (max-width: 650px) {
     #welcome-container {
       margin-top: 8rem;
@@ -266,3 +258,17 @@ h2 {
       height: 5rem;
     }
   }
+
+@media screen and (max-width: 1024px) {
+    #play-btn,
+    #restart-quiz {
+      border: 0rem;
+      background-color: #782420;
+    }
+  }
+  
+@media screen and (max-width: 3840px) {
+    #index-body {
+      background-size: cover;
+    }
+} 
