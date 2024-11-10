@@ -22,11 +22,11 @@ body {
 
 #game-container,
 #results-container {
-  display: none;
+  display: none ;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
  
 .general-header {
