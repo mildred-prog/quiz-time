@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     playBtn.addEventListener("click", startQuiz);
   
     // Answer buttons
-    Array.from(btnContainers).forEach((btn, index) => {
+    Array.from(btnContainers).forEach(btn => {
       btn.addEventListener("click", () => {
         btn.classList.add("selected");
         chosenAnswer = btn.textContent;
@@ -103,12 +103,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Functions
   
     function startQuiz() {
-  // Hide welcome and results containers, show game container
+  // Hides welcome and results containers, show game container
   welcomeContainer.classList.add("hide");
   resultsContainer.classList.add("hide");
   gameContainer.classList.remove("hide");
   
-  // Initialize game data
+
+  /**
+ * This function is used for shuffling the questions and answer
+ */
   shuffleQuestions();
   displayQuestion(shuffledListOfQuestionAndAnswers[currentQuestionIndex]);
     }
@@ -176,7 +179,10 @@ document.addEventListener("DOMContentLoaded", function() {
         endQuizTitle.textContent = "Wow, you did great!";
       } else if (correctAnswers >= 3) {
         endQuizTitle.textContent = "You can do better!";
-      } else {
+      } else if (correctAnswers <3) {
+        endQuizTitle.textContent ="You need to study more!";
+      }
+      else {
         endQuizTitle.textContent = "Try again!";
       }
   
