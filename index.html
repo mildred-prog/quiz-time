@@ -53,7 +53,7 @@
           <p id="question"></p>
         </div>
         <!-- 4 Boxes With Answers -->
-        <div id="answers-main-container">
+        <div id="choice-container" class="hide">
           <!--Answer 1-->
           <button class="answers-container"></button>
           <!--Answer 2-->
@@ -64,12 +64,12 @@
           <button class="answers-container"></button>
         </div>
         <!--Next question btn for user to click on once chosen an answer on the current round-->
-        <button id="next-round-btn" disabled>Next Question</button>
+        <button id="next-round-btn" class="hide" disabled>Next Question</button>
       </section>
 
-      <section id="results-container">
+      <section id="results-container" class="hide">
         <p id="score-text"><span id="correct-answers"></span></p>
-        <h3 id="encouragement-title"></h3>
+        <h3 id="encouragement-title">Weldone!</h3>
         <button id="restart-quiz">Restart Quiz</button>
       </section>
     </main>
