@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded",function(){
+  //Quiz question array
   const questions = [
       {
           question: "Who wrote the novel 'Pride & Pejudice'?",
@@ -53,9 +54,10 @@ document.addEventListener("DOMContentLoaded",function(){
       },
     ];
   
-    // Elements
+    // Elements selector
     const welcomeContainer = document.getElementById("welcome-container");
     const gameContainer = document.getElementById("game-container");
+    const descriptionContainer = document.getElementById("description-container");
     const resultsContainer = document.getElementById("results-container");
     const btnContainers = document.getElementsByClassName("answers-container");
     const choiceContainer = document.getElementById("choice-container");
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded",function(){
     const endQuizTitle = document.getElementById("encouragement-title");
     const scoreText = document.getElementById("score-text");
   
+    // Quiz state variables
     let shuffledListOfQuestionAndAnswers;
     let currentQuestionIndex = 0;
     let currentRound = 0;
@@ -82,8 +85,8 @@ document.addEventListener("DOMContentLoaded",function(){
     // Add eventlistener for answer buttons 
     Array.from(btnContainers).forEach(btn => {
       btn.addEventListener("click", () => {
-        btn.classList.add("selected");
-        chosenAnswer = btn.textContent;
+        btn.classList.add("selected"); // Highlights selected answer
+        chosenAnswer = btn.textContent; // Saves chosen answer for validation
         nextBtnEnable();
       });
     });
@@ -94,7 +97,7 @@ document.addEventListener("DOMContentLoaded",function(){
       currentQuestionIndex++;
       if (currentQuestionIndex < maxNumOfQuestions) { // Limit rounds to 10
         displayQuestion(shuffledListOfQuestionAndAnswers[currentQuestionIndex]);
-        nextRoundBtn.disabled = true;
+        nextRoundBtn.disabled = true; // Disable button until new answer selected
         nextRoundBtn.style.opacity = "0.2";
       } else {
         displayResults(); // Show results when all questions are answered
@@ -107,8 +110,9 @@ document.addEventListener("DOMContentLoaded",function(){
   // Functions
   function startQuiz() {
     // Hides welcome and results containers, show game container
-    questionContainer.classList.remove("hide");
-    welcomeContainer.classList.add("hide");
+    questionContainer.classList.remove("hide");// Show the question container
+    welcomeContainer.classList.add("hide");// Hide welcome screen elements
+    descriptionContainer.classList.add("hide");
     playBtn.classList.add("hide");
     nextRoundBtn.classList.remove("hide");
     gameContainer.classList.remove("hide");
@@ -122,6 +126,7 @@ document.addEventListener("DOMContentLoaded",function(){
   displayQuestion(shuffledListOfQuestionAndAnswers[currentQuestionIndex]);
     }
   
+    // Shuffle questions and limit to the maximum number of questions
     function shuffleQuestions() {
       for (let i = questions.length - 1; i > 0; i--) {
         let randomIndex = Math.floor(Math.random() * (i + 1));
@@ -132,6 +137,7 @@ document.addEventListener("DOMContentLoaded",function(){
       shuffledListOfQuestionAndAnswers = questions.slice(0 ,maxNumOfQuestions);
     }
   
+    // Display the current question and answers
     function displayQuestion(questionAndAnswer) {
       currentRound++;
       roundNumber.textContent = currentRound;
@@ -144,10 +150,9 @@ document.addEventListener("DOMContentLoaded",function(){
       }
     }
   
+    // Check if the chosen answer is correct
     function checkAnswer() {
-       //Get the correct answer from the shuffled list of questions
       let correctAnswer = shuffledListOfQuestionAndAnswers[currentQuestionIndex].correctAnswer;
-      //Checks if the selected answer is correct
       if (chosenAnswer === correctAnswer) {
         correctAnswers++;
       }
@@ -155,6 +160,7 @@ document.addEventListener("DOMContentLoaded",function(){
       nextRoundBtn.style.opacity = "0.2";
     }
   
+     // Enable the "Next" button when an answer is selected
     function nextBtnEnable() {
       nextRoundBtn.disabled = false;
       nextRoundBtn.style.opacity = "1";
@@ -169,17 +175,15 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
     
-    /**
-    * Restarts the quiz by resetting the temp variables and hiding the results container
-    */
+    // Restart the quiz by resetting variables and showing the welcome screen
     function restartQuiz() {
-       //Reset the temp variables
       currentQuestionIndex = 0;
       currentRound = 0;
       correctAnswers = 0;
   
       resultsContainer.style.display = "none";
       welcomeContainer.classList.remove("hide");
+      descriptionContainer.classList.remove("hide");
       playBtn.classList.remove("hide");
       welcomeContainer.style.marginTop = "8rem";
 
