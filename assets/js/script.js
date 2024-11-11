@@ -1,8 +1,6 @@
-// Wait for the DOM to finish loading before running the game
 
-document.addEventListener("DOMContentLoaded", function() {
-  //variables
-    const questions = [
+document.addEventListener("DOMContentLoaded",function(){
+  const questions = [
       {
           question: "Who wrote the novel 'Pride & Pejudice'?",
           options: ["J.D Salinger", "Leo Tolstoy", "F. Scott Fitzgerald", "Jane Austen"],
@@ -60,7 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameContainer = document.getElementById("game-container");
     const resultsContainer = document.getElementById("results-container");
     const btnContainers = document.getElementsByClassName("answers-container");
+    const choiceContainer = document.getElementById("choice-container");
+    const questionContainer = document.getElementById("question-container");
     const playBtn = document.getElementById("play-btn");
+    const roundContainer = document.getElementById("round-container");
     const roundNumber = document.getElementById("round-number");
     const questionElement = document.getElementById("question");
     const nextRoundBtn = document.getElementById("next-round-btn");
@@ -75,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let chosenAnswer = "";
     const maxNumOfQuestions = 10;
   
-    // Start the quiz
+    // Start the quiz when the user clicks the start quiz button
     playBtn.addEventListener("click", startQuiz);
   
-    // Answer buttons
+    // Add eventlistener for answer buttons 
     Array.from(btnContainers).forEach(btn => {
       btn.addEventListener("click", () => {
         btn.classList.add("selected");
@@ -103,18 +104,22 @@ document.addEventListener("DOMContentLoaded", function() {
     // Restart quiz button
     restartBtn.addEventListener("click", restartQuiz);
   
-    // Functions
-  
-    function startQuiz() {
-  // Hides welcome and results containers, show game container
-  welcomeContainer.classList.add("hide");
-  resultsContainer.classList.add("hide");
-  gameContainer.classList.remove("hide");
-  
-
+  // Functions
+  function startQuiz() {
+    // Hides welcome and results containers, show game container
+    questionContainer.classList.remove("hide");
+    welcomeContainer.classList.add("hide");
+    playBtn.classList.add("hide");
+    nextRoundBtn.classList.remove("hide");
+    gameContainer.classList.remove("hide");
+    choiceContainer.classList.remove("hide");
+    questionElement.style.display = "flex";
+    roundContainer.style.display = "flex";
+    welcomeContainer.style.marginTop = "0";
   /**
- * This function is used for shuffling the questions and answer
+ * This function is used for shuffling the questions and answers 
  */
+  
   shuffleQuestions();
   displayQuestion(shuffledListOfQuestionAndAnswers[currentQuestionIndex]);
     }
@@ -142,7 +147,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     function checkAnswer() {
+       //Get the correct answer from the shuffled list of questions
       let correctAnswer = shuffledListOfQuestionAndAnswers[currentQuestionIndex].correctAnswer;
+      //Checks if the clicked answer is the correct
       if (chosenAnswer === correctAnswer) {
         correctAnswers++;
       }
@@ -156,32 +163,43 @@ document.addEventListener("DOMContentLoaded", function() {
       nextRoundBtn.style.color = "#fff";
       nextRoundBtn.style.border = "0.3rem solid #fff";
       nextRoundBtn.style.cursor = "pointer";
-      nextRoundBtn.style.backgroundColor = "#782420";
+      nextRoundBtn.style.backgroundColor = "#e63010";
   
       for (let i = 0; i < btnContainers.length; i++) {
         btnContainers[i].disabled = true;
       }
     }
-  
+
+    
+    /**
+    * Restarts the quiz by resetting the temp variables and hiding the results container
+    */
     function restartQuiz() {
+       //Reset the temp variables
       currentQuestionIndex = 0;
       currentRound = 0;
       correctAnswers = 0;
   
-      resultsContainer.classList.add("hide");
+      resultsContainer.style.display = "none";
       welcomeContainer.classList.remove("hide");
+      playBtn.classList.remove("hide");
+      welcomeContainer.style.marginTop = "8rem";
+
     }
-  
+
+    /**
+    * Displays the results container, showing the users score and the restart btn
+    */
     function displayResults() {
       gameContainer.classList.add("hide");
-      resultsContainer.classList.remove("hide");
+      resultsContainer.style.display = "flex";
   
       if (correctAnswers === maxNumOfQuestions) {
-        endQuizTitle.textContent = "Perfect Score!";
+        endQuizTitle.textContent = "Arts & literature Genuis!";
       } else if (correctAnswers >= 6) {
-        endQuizTitle.textContent = "Wow, you did great!";
+        endQuizTitle.textContent = "You're Amazing!";
       } else if (correctAnswers >= 3) {
-        endQuizTitle.textContent = "You can do better!";
+        endQuizTitle.textContent = "Hey!! Put more Efforts!";
       } else if (correctAnswers <3) {
         endQuizTitle.textContent ="You need to study more!";
       }
