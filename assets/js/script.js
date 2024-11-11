@@ -116,9 +116,7 @@ document.addEventListener("DOMContentLoaded",function(){
     questionElement.style.display = "flex";
     roundContainer.style.display = "flex";
     welcomeContainer.style.marginTop = "0";
-  /**
- * This function is used for shuffling the questions and answers 
- */
+
   
   shuffleQuestions();
   displayQuestion(shuffledListOfQuestionAndAnswers[currentQuestionIndex]);
@@ -149,7 +147,7 @@ document.addEventListener("DOMContentLoaded",function(){
     function checkAnswer() {
        //Get the correct answer from the shuffled list of questions
       let correctAnswer = shuffledListOfQuestionAndAnswers[currentQuestionIndex].correctAnswer;
-      //Checks if the clicked answer is the correct
+      //Checks if the selected answer is correct
       if (chosenAnswer === correctAnswer) {
         correctAnswers++;
       }
