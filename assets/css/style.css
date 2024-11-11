@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+   overflow-x: hidden;
+}
+
 body {
     font-weight: 400;
     font-family: "Raleway" sans-serif;
@@ -11,7 +15,7 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
-    /* position: fixed; */
+    width: 100%;
 }
 
 #index-body {
@@ -20,18 +24,13 @@ body {
 
 }
 
-#game-container,
-#results-container {
-  display: none ;
-}
-
 .hide {
-  display: none !important;
+  display: none;
 }
  
 .general-header {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .website-hero-name:link,
@@ -67,6 +66,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+    width: 100%;
 }
   
 #play-btn {
@@ -92,7 +92,6 @@ body {
 #game-container {
     text-align: center;
     width: 100%;
-    display: flex;
     margin: 0 auto 3em;
     flex-direction: column;
     align-items: center;
@@ -101,7 +100,9 @@ body {
 }
 
 #round-container {
-    margin-bottom: 2em;
+    margin: 0 auto 2em;
+    justify-content: center;
+    display: none;
 }
 
 h2 {
@@ -124,19 +125,18 @@ h2 {
 }
 
 #question {
-    display: block;
     margin: 0em 0.5em;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
+    justify-content: center;
 }
   
-#answers-main-container {
-    display: flex;
+#choice-container {
     flex-direction: column;
     row-gap: 1rem;
-    margin: 2em 1em 1em 1em;
+    margin: 0 auto;
     height: auto;
     width: 100%;
     max-width: 3500px;
@@ -155,7 +155,7 @@ h2 {
 }
 
 #next-round-btn {
-    margin-top: 0.5em;
+    margin: 0.5em auto 0;
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
@@ -163,15 +163,17 @@ h2 {
     padding: 0em 1em;
     height: 4rem;
     transition: all 0.3s;
+    justify-content: center;
 }
 
 #results-container {
-    display: flex;
     flex-direction: column;
     gap: 1.5em;
     align-items: center;
     justify-content: center;
-    margin: 6em 4em 10em 4em;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
 }
 
 #score-text {
@@ -181,24 +183,24 @@ h2 {
 }
 
 #encouragement-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: normal;
     text-align: center;
     color: #fff;
 }
 
 #restart-quiz {
-    margin: 0.5em 0em;
-    font-size: 4rem;
-    font-weight: 600;
-    background-color: #000;
-    color: #fff;
-    border: 0.5rem solid #fff;
-    text-decoration: none;
-    border-radius: 3rem;
-    padding: 0em 1em;
-    height: 8rem;
-    transition: all 0.3s;
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #e63010;
+  color: #fff;
+  border: 4px solid #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0em 1em;
+  height: 5rem;
+  transition: all 0.3s;
   }
   
 #restart-quiz:hover {
@@ -209,8 +211,8 @@ h2 {
 /* remember to style other container make screen size responsive first */
 
 /*Media Queries*/
-
-@media screen and (max-width: 650px) {
+/* for screens 650px and larger */
+@media screen and (min-width: 650px) {
     #welcome-container {
       margin-top: 8rem;
     }
@@ -219,6 +221,7 @@ h2 {
       font-size: 3rem;
       border-radius: 2.5rem;
     }
+
     h2 {
       font-size: 1rem;
     }
@@ -231,12 +234,11 @@ h2 {
       font-size: 1.3rem;
     }
   
-    #answers-main-container {
+    #choice-container {
       row-gap: 0.5rem;
-      margin: 1em 0em 0.5em 0em;
     }
   
-    .answers-sub-container {
+    .answers-container {
       font-size: 1.5rem;
     }
   
@@ -259,15 +261,16 @@ h2 {
     }
   }
 
-@media screen and (max-width: 1024px) {
+  /* for screen size 1024px and larger */
+@media screen and (min-width: 1024px) {
     #play-btn,
     #restart-quiz {
       border: 0rem;
       background-color: #782420;
     }
   }
-  
-@media screen and (max-width: 3840px) {
+  /* for screen size 1440px and above */
+@media screen and (min-width: 1440px) {
     #index-body {
       background-size: cover;
     }
