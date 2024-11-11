@@ -6,7 +6,7 @@
 
     <meta name="description" content="Art and literature Quiz  bringing together different creative forms, art and literature can create new ways of understanding the world.">
     <meta name="keywords" content="Quiz, Arts Quiz, Literature Quiz">
-    
+
     <!-- font awesome and goggle font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -48,7 +48,7 @@
           <h2>Round<span id="round-number"></span></h2>
         </div> 
 
-        <div class="question-container">
+        <div id="question-container" class="hide">
           <!--Displays question-->
           <p id="question"></p>
         </div>
@@ -67,7 +67,7 @@
         <button id="next-round-btn" class="hide" disabled>Next Question</button>
       </section>
 
-      <section id="results-container" class="hide">
+      <section id="results-container">
         <p id="score-text"><span id="correct-answers"></span></p>
         <h3 id="encouragement-title">Weldone!</h3>
         <button id="restart-quiz">Restart Quiz</button>
