@@ -13,7 +13,7 @@ html{
 /* Basic body styling */
 body {
     font-weight: 400;
-    font-family: "Raleway" sans-serif;
+    font-family: sans-serif;
     color: #050505;
     display: flex;
     height: 100vh;
@@ -294,7 +294,7 @@ h2 {
       background-color: #782420;
     }
   }
-  
+
   /*Responsive styling for screen size 1440px and above */
 @media screen and (min-width: 1440px) {
     #index-body {
