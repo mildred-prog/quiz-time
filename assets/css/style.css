@@ -1,13 +1,16 @@
+/* Reset padding, margin, and box-sizing for all elements */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow */
 html{
    overflow-x: hidden;
 }
 
+/* Basic body styling */
 body {
     font-weight: 400;
     font-family: "Raleway" sans-serif;
@@ -18,12 +21,14 @@ body {
     width: 100%;
 }
 
+/* Styling for the main body background */
 #index-body {
     background-position: center;
     background-color: #050505;
 
 }
 
+/* Hide elements with 'hide' class */
 .hide {
   display: none;
 }
@@ -34,6 +39,7 @@ body {
     margin-top: 30px;
 }
 
+/* Link styles for header */
 .website-hero-name:link,
 .website-hero-name:visited {
   text-decoration: none;
@@ -45,6 +51,7 @@ body {
   color: #ddd;
 }
 
+/* Individual styling for 'arts' and 'literature' in the header */
 #arts {
     font-size: 3.5rem;
 }
@@ -71,6 +78,7 @@ body {
     width: 100%;
 }
 
+/* Styling for welcome text */
 #description-container {
   font-size: 1.2em;                   
   color: #fff;                        
@@ -83,6 +91,7 @@ body {
   box-shadow: 0px 4px 8px rgba(209, 152, 152, 0.1);
 }
 
+/* Start button styling */
 #play-btn {
     font-size: 3em;
     font-weight: 500;
@@ -95,6 +104,7 @@ body {
     color: #fff;
     background-color: transparent;
 }
+
 
 #play-btn:hover {
     color: #fff;
@@ -119,6 +129,7 @@ body {
     display: none;
 }
 
+/* General heading styling for rounds */
 h2 {
     font-size: 1.5rem;
     padding: 0.3em 0.5em;
@@ -138,6 +149,7 @@ h2 {
     font-size: 1.5rem;
 }
 
+/* Question styling */
 #question {
     margin: 0em 0.5em;
     text-align: center;
@@ -155,7 +167,8 @@ h2 {
     width: 100%;
     max-width: 3500px;
 }
-  
+ 
+/* Styling for each answer button */
 .answers-container {
     align-self: center;
     padding: 0.5em 1em;
@@ -222,10 +235,8 @@ h2 {
     border: 0rem;
     background-color: #782420;
 }
-/* remember to style other container make screen size responsive first */
 
-/*Media Queries*/
-/* for screens 650px and larger */
+/* Responsive styling for screens 650px and larger */
 @media screen and (min-width: 650px) {
     #welcome-container {
       margin-top: 8rem;
@@ -275,7 +286,7 @@ h2 {
     }
   }
 
-  /* for screen size 1024px and larger */
+  /*Responsive styling for screen size 1024px and larger */
 @media screen and (min-width: 1024px) {
     #play-btn,
     #restart-quiz {
@@ -283,7 +294,8 @@ h2 {
       background-color: #782420;
     }
   }
-  /* for screen size 1440px and above */
+  
+  /*Responsive styling for screen size 1440px and above */
 @media screen and (min-width: 1440px) {
     #index-body {
       background-size: cover;
