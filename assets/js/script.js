@@ -1,4 +1,7 @@
+// Wait for the DOM to finish loading before running the game
+
 document.addEventListener("DOMContentLoaded", function() {
+  //variables
     const questions = [
       {
           question: "Who wrote the novel 'Pride & Pejudice'?",
