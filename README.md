@@ -74,22 +74,60 @@ The clean and modern Raleway font was selected to enhance readability and create
 
 #### Technologies:
 Languages:                                           
--HTML5: Used for the structure of the website.       
--CSS3: Used for styling and making the website responsive across different devices. 
--JavaScript: Used for game logic, question management, and user interaction
+- HTML5: Used for the structure of the website.       
+- CSS3: Used for styling and making the website responsive across different devices.
+- JavaScript: Used for game logic, question management, and user interaction.
 
-  - [Technologies Used](#technologies-used)
-    - [VSCode Extensions](#vscode-extensions)
-  - [Testing](#testing)
-    - [W3C Validator](#w3c-validator)
-      - [HTML](#html)
-      - [CSS](#css)
-    - [Wave](#wave)
-    - [JSHint](#jshint)
-    - [Lighthouse Testing](#lighthouse-testing)
-      - [Mobile](#mobile)
-      - [Desktop](#desktop)
-    - [Coverage](#coverage)
+Tools & Libraries:   
+Google Fonts: For typography.                       
+Git: For version control.                   
+GitHub Pages: For hosting the live website.
+
+### Testing
+
+#### Validator Testing:                                   
+HTML: Passed validation with the W3C HTML Validator.                                         
+ ![html](<assets/images/w3 validator .png>)
+ https://validator.w3.org/nu/#textarea     
+CSS: Passed validation with the W3C CSS Validator.
+![css](<assets/images/css validator.png>) 
+https://jigsaw.w3.org/css-validator/validator 
+JAVASCRIPT: Passed validation with the Jshint.
+![javascript](assets/images/jshint.png)
+https://jshint.com/
+
+#### Browser Compactibility
+Testing was completed in Google Chrome, Microsoft Edge and Firefox web browsers.
+
+- Google Chrome
+![chrome](assets/images/chrome.png)
+- Microsoft edge
+![microsoft](assets/images/microsoft.png)
+- Firefox
+![firefox](assets/images/mozilla.png)
+
+#### Accessibility
+The website was tested using light house to ensure accessibility ,it achieved a good score for Accessibility, Best practises and SEO
+![lighthouse](assets/images/lighthouse.png)
+
+#### Links Testing
+All internal and external links were tested to ensure they direct to the correct page and open in new tabs.
+
+#### Clone 
+To run website locally,
+- Clone the repository
+![clone](assets/images/clone.png)
+- Navigate to the project directory.
+- Open index.html in your browser to view the website locally.
+
+#### Deployment
+The site was deployed to GitHub pages.
+ The steps to deploy are as follows:      
+- In the GitHub repository, navigate to the Settings tab     
+- From the source section drop-down menu, select the Master Branch      
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.              
+The live link can be found here - https://mildred-prog.github.io/quiz-time/index.html
+
   - [Bugs](#bugs)
     - [Current](#current)
     - [Resolved](#resolved)
