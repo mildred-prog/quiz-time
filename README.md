@@ -32,11 +32,14 @@ My game is simple.
 - As a returning user, I want to achieve a higher score than before competing for the best score possible.
 
 ## Features 
+- The Welcome container displays the Arts and literature header that is also a link to the home page,a welcome message giving an insight of what the user should expect and what the game is all about and a start quiz button.
+ ![Arts & Literature](assets/images/home-page.png) displaying the button to start the game.
 
-      - [Wireframes](#wireframes)
-      - [Colour Scheme](#colour-scheme)
-      - [Typography](#typography)
-      - [Imagery](#imagery)
+
+
+- The [Game container](#the-quiz---before-selection), displaying the actual quiz elements that the user will interact with.
+- The [Results container](#the-results), displaying the users final results of their game, with the option of restarting if wishing too.
+
   - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
