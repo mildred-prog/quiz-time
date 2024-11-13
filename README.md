@@ -15,7 +15,7 @@ My game is simple.
 
 **3.** Click `Next Question` when you are ready to move on.
 
-**4.** See how bad or knowledgeable you are at the end of the quiz. 
+**4.** See how bad or knowledgeable you are at the end of the quiz.
 
   
 ## Table of Contents
