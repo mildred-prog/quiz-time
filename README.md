@@ -128,9 +128,18 @@ The site was deployed to GitHub pages.
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.              
 The live link can be found here - https://mildred-prog.github.io/quiz-time/index.html
 
-  - [Bugs](#bugs)
-    - [Current](#current)
-    - [Resolved](#resolved)
+### Bugs
+
+|    Bug   |   Fix   |
+| ------------- | ------------- |
+| Questions were not shuffling correctly on each quiz start.  | Implemented a shuffleQuestions() function to randomize the question array, ensuring questions appear in a different order each time. |
+| The 'Next' button wasn't enabled after selecting an answer. | Created a nextBtnEnable() function to enable the button, allowing users to proceed to the next question. |
+| Final score displayed incorrectly due to miscalculated correct answers.  | Adjusted the checkAnswer() function to track correct answers accurately.  |
+| The welcome container lacked a heading, hence causing a warning in the w3c validator.  | Used div element to target the id.  |
+| Goggle font was not imported correctly | Used the @import on the web to correct this rather than the link. |
+
+
+
   - [Development](#development)
     - [GitHub](#github)
     - [VSCode](#vscode)
