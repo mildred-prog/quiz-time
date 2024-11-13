@@ -67,7 +67,10 @@ The clean and modern Raleway font was selected to enhance readability and create
 - Tablet and Mobile: Adjustments are made to reduce text and button sizes slightly, ensuring a compact, user-friendly interface
 
 #### Wireframe
- A wireframe was created to plan the layout and structure of the website before development
+ A wireframe was created to plan the layout and structure of the website for mobile apps and desktop apps before development
+ ![Start page](assets/images/wireframe-1.png)
+ ![Quiz section](assets/images/wireframe-2.png)
+ ![Score page](assets/images/wireframe-3.png)
 
   - [Technologies Used](#technologies-used)
     - [VSCode Extensions](#vscode-extensions)
