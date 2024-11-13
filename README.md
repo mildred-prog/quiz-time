@@ -28,8 +28,10 @@ My game is simple.
 
 #### Returning Visitor Goals: 
 - As a returning user, I want to expand my Knowledge on art and literature.
-- 
+- As a returning user, I want to access a list of questions I've previously answered incorrectly, so I can focus on improving in those areas.
+- As a returning user, I want to achieve a higher score than before competing for the best score possible.
 
+## Features 
 
       - [Wireframes](#wireframes)
       - [Colour Scheme](#colour-scheme)
