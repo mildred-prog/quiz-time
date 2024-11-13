@@ -17,20 +17,20 @@ My game is simple.
 
 **4.** See how bad or knowledgeable you are at the end of the quiz.
 
-  
-## Table of Contents
+## User Goals
 
-- [Portfolio Project 2 - JavaScript](#portfolio-project-2---javascript)
-  - [Live Site](#live-site)
-  - [Repository](#repository)
-  - [Table of Contents](#table-of-contents)
-  - [Objective](#objective)
-  - [Brief](#brief)
-    - [Mastermind - A Logic Game](#mastermind---a-logic-game)
-  - [UX - User Experience Designs
-  ](#ux---user-experience-design)
-    - [User Requirements](#user-requirements)
-    - [Initial Concept](#initial-concept)
+#### First time Visitors Goals: 
+- As a user, I want to be able to start a quiz easily so that I can test my knowledge on art and literature right away.
+- As a user, I want randomized questions each time I play, so the quiz feels fresh and engaging.
+- As a user, I want to see my score and an encouragement message at the end to understand how well I did.
+- As a user, I want the option to restart the quiz after viewing my score, so I can play again without refreshing the page.
+- As a user, I want a visually appealing and simple design so that I can focus on the quiz without distraction.
+
+#### Returning Visitor Goals: 
+- As a returning user, I want to expand my Knowledge on art and literature.
+- 
+
+
       - [Wireframes](#wireframes)
       - [Colour Scheme](#colour-scheme)
       - [Typography](#typography)
