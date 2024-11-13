@@ -47,16 +47,27 @@ My game is simple.
 - Incorporate sound effects for correct and incorrect answers.
 - Add a leaderboard to the results page to give the game a competitive nature allowing users to battle against each other.
 
-#### Design:
+### Design:
 
-Color Scheme:
+#### Color Scheme:
 - #050505 (Almost black)
 Used for the primary background to create a sleek and immersive quiz experience, allowing text and interactive elements to stand out.
 - #FFFFFF (White) White text is used against the dark background to ensure readability and maintain high contrast, especially for question text and main headers.
 - #e63010 (Red-Orange)Applied to the "Next" button and restart button borders, adding vibrancy and visual focus to interactive elements.
 - #782420 (Dark Brick Red)Used for button hover effects and restart button background, providing a warm, engaging highlight without overpowering the text.
 
+#### Typography
+- Font: Raleway (sans-serif)
+The clean and modern Raleway font was selected to enhance readability and create a professional, stylish appearance. The font is applied to all main text, headings, and button labels.
 
+#### Layout
+- The app’s layout is responsive, designed to adjust to various screen sizes:
+
+- Desktop: Buttons and text are displayed with larger padding and font sizes for easy navigation.
+- Tablet and Mobile: Adjustments are made to reduce text and button sizes slightly, ensuring a compact, user-friendly interface
+
+#### Wireframe
+ A wireframe was created to plan the layout and structure of the website before development
 
   - [Technologies Used](#technologies-used)
     - [VSCode Extensions](#vscode-extensions)
