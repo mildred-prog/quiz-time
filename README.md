@@ -72,6 +72,12 @@ The clean and modern Raleway font was selected to enhance readability and create
  ![Quiz section](assets/images/wireframe-2.png)
  ![Score page](assets/images/wireframe-3.png)
 
+#### Technologies:
+Languages:                                           
+-HTML5: Used for the structure of the website.       
+-CSS3: Used for styling and making the website responsive across different devices. 
+-JavaScript: Used for game logic, question management, and user interaction
+
   - [Technologies Used](#technologies-used)
     - [VSCode Extensions](#vscode-extensions)
   - [Testing](#testing)
