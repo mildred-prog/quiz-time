@@ -32,17 +32,32 @@ My game is simple.
 - As a returning user, I want to achieve a higher score than before competing for the best score possible.
 
 ## Features 
-- The Welcome container displays the Arts and literature header that is also a link to the home page,a welcome message giving an insight of what the user should expect and what the game is all about and a start quiz button.
- ![Arts & Literature](assets/images/home-page.png) displaying the button to start the game.
+- The Welcome container displays the Arts and literature header that is also a link to the home page,a welcome message giving an insight of what the user should expect and what the game is all about aswell as a start quiz button.
+ ![Welcome Home Page](assets/images/home-page.png)
+
+- The Game container, displays the actual quiz elements that the user will interact with,the rounds/ number of questions the user is on.
+![Game container](assets/images/quiz-page.png)
+
+- The Results container displays the users final results of their game and a restart button
+![Result container](assets/images/score-page.png)
+
+#### Future Features
+- Implement a timer for each question to add a sense of urgency.
+- Add the input for a username on the home page, to make user more engaged and feel more connected to the quiz.
+- Incorporate sound effects for correct and incorrect answers.
+- Add a leaderboard to the results page to give the game a competitive nature allowing users to battle against each other.
+
+#### Design:
+
+Color Scheme:
+- #050505 (Almost black)
+Used for the primary background to create a sleek and immersive quiz experience, allowing text and interactive elements to stand out.
+- #FFFFFF (White) White text is used against the dark background to ensure readability and maintain high contrast, especially for question text and main headers.
+- #e63010 (Red-Orange)Applied to the "Next" button and restart button borders, adding vibrancy and visual focus to interactive elements.
+- #782420 (Dark Brick Red)Used for button hover effects and restart button background, providing a warm, engaging highlight without overpowering the text.
 
 
 
-- The [Game container](#the-quiz---before-selection), displaying the actual quiz elements that the user will interact with.
-- The [Results container](#the-results), displaying the users final results of their game, with the option of restarting if wishing too.
-
-  - [Features](#features)
-    - [Existing Features](#existing-features)
-    - [Features Left to Implement](#features-left-to-implement)
   - [Technologies Used](#technologies-used)
     - [VSCode Extensions](#vscode-extensions)
   - [Testing](#testing)
