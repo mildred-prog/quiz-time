@@ -2,7 +2,6 @@
 
 ## 
 This is an An interactive Art & Literature Quiz that challenges players on their knowledge of famous literary works, authors, artists, and iconic artworks. Created with HTML, CSS, and JavaScript, this quiz offers a smooth, engaging experience as users navigate through questions, and see personalized results based on their performance at the end of the quiz.![Arts & Literature](assets/images/fullscreen.png)
-Am I Responsive ![Webpage] https://ui.dev/amiresponsive?url=https://mildred-prog.github.io/quiz-time/index.html
 
 
 ## The Rules!
@@ -61,15 +60,21 @@ Used for the primary background to create a sleek and immersive quiz experience,
 The clean and modern Raleway font was selected to enhance readability and create a professional, stylish appearance. The font is applied to all main text, headings, and button labels.
 
 #### Layout
-- The app’s layout is responsive, designed to adjust to various screen sizes:
+- The app’s layout is responsive, designed to adjust to various screen sizes.
 
 - Desktop: Buttons and text are displayed with larger padding and font sizes for easy navigation.
-- Tablet and Mobile: Adjustments are made to reduce text and button sizes slightly, ensuring a compact, user-friendly interface
+- Tablet and Mobile: Adjustments are made to reduce text and button sizes slightly, ensuring a compact, user-friendly interface.
 
 #### Wireframe
  A wireframe was created to plan the layout and structure of the website for mobile apps and desktop apps before development
+
+- Start Page wireframe
  ![Start page](assets/images/wireframe-1.png)
+
+- Quiz section wireframe
  ![Quiz section](assets/images/wireframe-2.png)
+
+- Score page wireframe
  ![Score page](assets/images/wireframe-3.png)
 
 #### Technologies:
@@ -87,10 +92,10 @@ GitHub Pages: For hosting the live website.
 
 #### Validator Testing:                                   
 HTML: Passed validation with the W3C HTML Validator.                                         
- ![html](<assets/images/w3 validator .png>)
+![html](assets/images/w3c-validator.png)
  https://validator.w3.org/nu/#textarea     
 CSS: Passed validation with the W3C CSS Validator.
-![css](<assets/images/css validator.png>) 
+![css](assets/images/css-validator.png) 
 https://jigsaw.w3.org/css-validator/validator 
 JAVASCRIPT: Passed validation with the Jshint.
 ![javascript](assets/images/jshint.png)
@@ -116,7 +121,7 @@ All internal and external links were tested to ensure they direct to the correct
 #### Clone 
 To run website locally,
 - Clone the repository
-![clone](assets/images/clone.png)
+https://github.com/mildred-prog/quiz-time.git
 - Navigate to the project directory.
 - Open index.html in your browser to view the website locally.
 
@@ -124,8 +129,8 @@ To run website locally,
 The site was deployed to GitHub pages.
  The steps to deploy are as follows:      
 - In the GitHub repository, navigate to the Settings tab     
-- From the source section drop-down menu, select the Master Branch      
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.              
+- From the source section drop-down menu, select the main Branch      
+Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.              
 The live link can be found here - https://mildred-prog.github.io/quiz-time/index.html
 
 ### Bugs
@@ -138,22 +143,15 @@ The live link can be found here - https://mildred-prog.github.io/quiz-time/index
 | The welcome container lacked a heading, hence causing a warning in the w3c validator.  | Used div element to target the id.  |
 | Goggle font was not imported correctly | Used the @import on the web to correct this rather than the link. |
 
+### Credits
 
+#### Content
 
-  - [Development](#development)
-    - [GitHub](#github)
-    - [VSCode](#vscode)
-      - [Cloning](#cloning)
-      - [Extensions](#extensions)
-      - [Editing](#editing)
-  - [Deployment](#deployment)
-    - [Github Pages](#github-pages)
-    - [Forking](#forking)
-  - [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
-  - [Personal Development](#personal-development)
-    - [Accessibility](#accessibility)
-    - [JavaScript Structure](#javascript-structure)
-    - [GitHub Project Board and Issues](#github-project-board-and-issues)
+- All the questions were created using  (https://www.trivianerd.com/topic/art-and-literature-trivia)
+
+- The Favicon icon was made using https://favicon.io/favicon-converter/
+
+- The code used for shuffling the question set [Fisher-Yates Algorithm](https://stackoverflow.com/questions/59810241/how-to-fisher-yates-shuffle-a-javascript-array)
+
+#### Acknowledgement
+- Vernell Clark for his continuous guidance, insightful feedback, and unwavering support throughout the project which helped refine my approach and ensured the project meet a good standard.(https://github.com/VCGithubCode)
